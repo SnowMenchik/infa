@@ -1,0 +1,33 @@
+# базовый код для всех черепашек
+from turtle import *
+
+k = 20
+right(45)
+tracer(0)
+for i in range(10):
+    right(45)
+    forward(203*k)
+    right(45)
+penup()
+
+backward( 40 * k)
+right(45)
+
+pendown()
+
+for i in range(5):
+    forward(20*k)
+    left(90)
+
+penup()
+for x in range(-50, 50):
+    for y in range(-50, 50):
+        goto(x*k, y*k)
+        dot(3, 'red')
+
+tracer(1)
+done()
+
+i = '10000'
+p = i.replace('0', '2')
+print(p)
