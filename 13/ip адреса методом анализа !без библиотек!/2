@@ -1,0 +1,7 @@
+m = bin(255)[2:].zfill(8) + ' ' + bin(248)[2:].zfill(8) + ' ' + bin(0)[2:].zfill(8) + ' ' + bin(0)[2:].zfill(8)
+ip = bin(98)[2:].zfill(8) + ' ' + bin(71)[2:].zfill(8) + ' ' + bin(254)[2:].zfill(8) + ' ' + bin(171)[2:].zfill(8)
+print(ip)
+print(m)
+w =int('01000000', 2)
+p = int('00000111', 2)
+print(98, w, 0, p )
