@@ -1,0 +1,7 @@
+# for a in range(1, 1000):
+#     col = 52 + 10 + 500
+#     i = ceil(log2(col))
+#     v1 = (ceil(a*i)/8)
+#     if  45877 * v1 > 49*2**20:
+#         print(a)
+#         break
