@@ -1,0 +1,8 @@
+for a in range(1, 1000):
+    alf = 9
+    i = ceil(log2(36))
+    v1 = ceil((alf * i)/8)+18
+    if v1 * a <=  n:
+        print(a)
+
+# ГДЕ СТОИТ n ПОМЕНЯЙТЕ НА ЧИСЛО ИЗ ЗАДАЧИ
