@@ -1,0 +1,8 @@
+# for a in range(1, 1000):
+#     len_s = 261
+#     i = ceil(log2(a))
+#     v1 = ceil((len_s * i)/8)
+#     v = v1 * 252500
+#     if v > 31 * 2**20:
+#         print(a)
+#         break
