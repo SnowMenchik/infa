@@ -1,3 +1,7 @@
+from functools import *
+
+@lru_cache(None)
+
 def f(a, b, not_number):
     if a == b:
         return 1
