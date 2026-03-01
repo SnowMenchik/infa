@@ -1,3 +1,6 @@
+from functools import *
+
+@lru_cache(None)
 def f(x, y, num):
     if x==y: return 1
     if x < y or x ==num: return 0
