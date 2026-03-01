@@ -1,0 +1,9 @@
+def lib(x,y):
+    alf = sorted('0123456789QWERTYUIOPASDFGHJKLZXCVBNM')
+    if x  == 0:
+        return '0'
+    res = ''
+    while x > 0:
+        res = alf[x % y] + res
+        x =x // y
+    return res
