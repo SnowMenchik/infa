@@ -1,4 +1,4 @@
-f = open('9 baza')
+f = open('1 9 baza')
 m = 0
 for s in f:
     a = list(map(int, s.split()))
