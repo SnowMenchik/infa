@@ -1,9 +1,10 @@
 f = open('9 baza')
-cnt = 0
+m = 0
 for s in f:
-    a =list(map(int, s.split()))
-    powt = [x for x in a if a.count(x) >  1]
-    nepowt = [x for x in a if a.count(x) == 1]
-    if max(a) not in powt and len(nepowt) == 3 and len(set(powt)) == 2:
-        cnt+=1
-print(cnt)
+    a = list(map(int, s.split()))
+    a.sort()
+    nepov = [x for x in a if a.count(x) == 1]
+    if (a.count(a[-1]) == 3 and len(nepov) == 5) or (a.count(a[-1]) == 4 and len(nepov) == 4):
+        if max(nepov) + min(nepov) <= sum(nepov[1:-1]):
+            m+=1
+print(m)
