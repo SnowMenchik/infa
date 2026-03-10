@@ -1,0 +1,5 @@
+for x in range(16):
+    f = int(f"1{x}BAD", 16) + int(f"2C{x}FE", 16)
+    if f % 15 == 0:
+        print(f // 15)
+        break
